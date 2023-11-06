@@ -3,7 +3,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import Funfact from './Funfact';
 import "./Header.css";
 
 const Header = () => {
@@ -24,7 +23,6 @@ const Header = () => {
       <div className='home-content'>
       <h1 >Hi, I'm <span className='name'>Pradeesh</span></h1>
       <h2> ✨ Dedicated web developer and coding enthusiast, constantly diving into the tech world's wonders. 👨‍💻</h2>
-     {/* <p><b>Fun fact 😆</b>:<Funfact/></p>*/}
       </div> 
       <button className='resume'>
       <a href="resume.pdf" download="resume.pdf">Download Resume  </a>

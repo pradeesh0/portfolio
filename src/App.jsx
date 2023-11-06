@@ -12,7 +12,7 @@ import 'aos/dist/aos.css'
 const App = () => {
 
 useEffect(()=>{
-  AOS.init({anchorPlacement:"bottom-bottom",offset:100,mirror:false}  
+  AOS.init({anchorPlacement:"bottom-bottom",offset:100,mirror:true}  
     );
 },[])
 

@@ -12,7 +12,7 @@ const About = () => {
 
   const closeTechStack = () => {
     setShowTechStack(false);
-  }; // Empty dependency array ensures useEffect runs once after initial render
+  };
 
   return (
     <section id="about" className='about' >
@@ -20,13 +20,13 @@ const About = () => {
         <div className='abt-container'>
             <div className='abt-img' data-aos="zoom-in" data-aos-delay="500">
               <span className='circle'></span>
-              <img src="abt-img.jpg" alt="prof"></img>
+              <img src='abt-img.jpg' alt="prof"></img>
             </div>
             <div className='abt-para' data-aos="slide-left" data-aos-duration="1500">
               <div className="normpara">
             <p>
           Hello! I'm Pradeesh, a passionate web developer in creating
-          responsive and user-friendly websites and web applications.
+          responsive and user-friendly websites and web applications.and i feel great!!.
         </p>
         <p>
           My journey in web development began during the time of pandemic(around like 2021), and since then, I've been on a constant
