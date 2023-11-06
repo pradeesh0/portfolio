@@ -1,0 +1,102 @@
+
+#projects h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: cyan;
+    width: 100%;
+    text-align: center;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:20px;
+}
+.project{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top:30px;
+    left:40px;
+    transition: transform 2s ;
+    transform-style: preserve-3d;;
+}
+.project.flipped{
+    transform: rotateY(180deg) ;
+}
+.project:nth-child(1) h3{
+    background:url(../../../public/img/proj1.gif)  10% 80%/100px no-repeat,
+    url(../../../public/icons/react-original.svg) no-repeat 70% 50%/50px,
+    url(../../../public/icons/python-original.svg) no-repeat 84% 50%/50px,
+    url(../../../public/icons/opencv-original-wordmark.svg) no-repeat 77% 90%/50px;
+}
+.project:nth-child(2) h3{
+    background: url(../../../public/img/proj2.jpg) no-repeat 5% 90%/300px,
+    url(../../../public/icons/react-original.svg) no-repeat 70% 50%/50px,
+    url(../../../public/icons/nodejs-original.svg) no-repeat 84% 50%/50px,
+    url(../../../public/icons/websocket.svg) no-repeat 77% 90%/50px;
+}
+.project:nth-child(3) h3{
+    background: url(../../../public/img/proj3.jpg) no-repeat 0% 70%/250px,
+    url(../../../public/icons/mongodb-original.svg) no-repeat 70% 50%/40px,
+    url(../../../public/icons/express.png) no-repeat 84% 50%/40px,
+    url(../../../public/icons/react-original.svg) no-repeat 70% 90%/40px,
+    url(../../../public/icons/nodejs-original.svg) no-repeat 84% 90%/40px;
+}
+.project:nth-child(4) h3{
+    background: url(../../../public/img/proj4.jpg) no-repeat 10% 70%/150px,
+    url(../../../public/icons/react-original.svg) no-repeat 70% 50%/50px,
+    url(../../../public/icons/javascript-original.svg) no-repeat 84% 50%/50px;
+}
+.back h4{
+    color: darksalmon;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.project h3{
+    text-align: center;
+    height: 100%;
+    width: 65%;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px  purple;
+    position: absolute;
+    backface-visibility: hidden;
+    font-size: 28px;
+    padding: 20px;
+    color:salmon;
+    cursor:pointer;
+    left:15%;
+}
+.back img{
+    position:absolute;
+    top:0;
+    right:0;
+    border-radius:50%;
+    height:35px;
+}
+.back img:hover{
+    filter: brightness(200%);
+    height: 45px;
+}
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px  rgb(65, 126, 218);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    color:whitesmoke;
+    font-size: 18px;
+    padding: 20px;
+    z-index:1;
+    flex-wrap: wrap;
+}
+.back li{
+    margin-top: .5rem;
+    list-style: none;
+}
+.back li::before{
+    content: "➤"; 
+    margin-right: 20px;
+    color:  rgb(65, 126, 218);;;
+}

@@ -1,0 +1,80 @@
+.skills h2{    
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: cyan;
+  width: 100%;
+  text-align: center;
+}
+.skills-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url('../../../public/backend.gif') 30% 57% / 250px no-repeat;
+}
+
+.skill{
+  position: relative;
+  margin-top:2rem;
+  display: flex;
+  align-items: center;
+  width:55rem;
+  height: 20rem;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 10px purple;
+}
+.skill::before{
+  content: "";
+  position: absolute;
+  width: 110%;
+  height:25%;
+  background: linear-gradient(#00ccff,#d500f9);
+  animation: rotate 7s linear infinite;
+  z-index: -3;
+} 
+.skill::after{
+  content: '';
+  position: absolute;
+  background: black;
+  inset: 4px;
+  z-index: -2;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.skill h3{
+  margin-left: 2rem;
+  font-size: 30px;
+  color:goldenrod;
+}
+.skill-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px;
+}
+.skill-image{
+  height:30px;
+  width: 30px;
+  margin-right: .4rem;
+}
+.skill-item{
+  font-size: 19px;
+  padding: 1px;
+  display: flex;
+}
+.skill:nth-child(1){
+  margin-left: 15%;
+}
+.skill:nth-child(2){
+  margin-left: 50%;
+}
+.skill:nth-child(3){
+  margin-left: 15%;
+}
