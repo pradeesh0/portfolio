@@ -29,7 +29,7 @@
   width: 110%;
   height:25%;
   background: linear-gradient(#00ccff,#d500f9);
-  animation: rotate 7s linear infinite;
+  animation: rotate 20s linear infinite;
   z-index: -3;
 } 
 .skill::after{
