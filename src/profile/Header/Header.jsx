@@ -4,8 +4,54 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import "./Header.css";
+import { useEffect } from 'react';
+
 
 const Header = () => {
+  useEffect(()=>{
+    const handlescroll=()=>{
+      const header=document.querySelector("header")
+      if(header){
+        header.classList.toggle('sticky',window.scrollY>100)
+      }
+    }
+
+    window.addEventListener('scroll',handlescroll);
+
+    return()=>{
+      window.removeEventListener('scroll',handlescroll)
+    }
+  },[]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section'); // Change this selector according to your section structure
+      const navLinks = document.querySelectorAll('header nav a'); // Change this selector according to your navigation structure
+      const scrollY = window.scrollY;
+
+      sections.forEach(sec => {
+        const offset = sec.offsetTop - 100;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+
+        if (scrollY >= offset && scrollY < offset + height) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(id)) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  },[]);
+  
   return (
     <>
     <header className='header'>
@@ -40,3 +86,23 @@ const Header = () => {
 }
 
 export default Header;
+
+/*
+let sections=document.querySelectorAll('section');
+  let navlink=document.querySelectorAll('header nav a');
+
+  window.onscroll=()=>{
+    sections.forEach(sec=>{
+      let top=window.scrollY;
+      let offset=sec.offsetTop-100;
+      let height=sec.offsetHeight;
+      let id=sec.getAttribute('id');
+
+      if(top>=offset && top<offset+height){
+        navlink.forEach(links=>{
+          links.classList.remove('active');
+          document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        })
+      }
+    })
+  }*/

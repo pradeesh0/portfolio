@@ -20,7 +20,7 @@ const About = () => {
         <div className='abt-container'>
             <div className='abt-img' data-aos="zoom-in" data-aos-delay="500">
               <span className='circle'></span>
-              <img src='abt-img.jpg' alt="prof"></img>
+              <img src='../../../public/img/abt-img.jpg' alt="prof"></img>
             </div>
             <div className='abt-para' data-aos="slide-left" data-aos-duration="1500">
               <div className="normpara">

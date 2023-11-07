@@ -10,7 +10,8 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background:rgba(22, 22, 22, 0.877)
+    background:none;
+    transition: 1s ease-in;
 }
 .header h1{
     text-decoration: overline;
@@ -30,6 +31,10 @@
 .navbar a.active{
     color:cyan;
     font-size: 2rem;
+}
+header.sticky{
+    background: rgb(42, 41, 41);
+   
 }
 .name{
     color:gold ;
@@ -72,16 +77,15 @@
     height:6rem;
     width:6rem;
     margin:0 1.5rem 0 1.5rem;
-    border: .3rem solid blanchedalmond;
     border-radius: 50%;
     padding: 1rem;
     color: rgb(43, 148, 148);
     transition: .5s linear;
 }
 .icon a svg:hover{
-    border:none;
-    color: gold;
-    padding-bottom: 1.3rem;
+    border: none;
+   color: gold;
+   padding-top: .5rem;
 }
 .resume{
     position: relative;
