@@ -26,7 +26,7 @@ const About = () => {
               <div className="normpara">
             <p>
           Hello! I'm Pradeesh, a passionate web developer in creating
-          responsive and user-friendly websites and web applications.and i feel great!!.
+          responsive and user-friendly websites and web applications.
         </p>
         <p>
           My journey in web development began during the time of pandemic(around like 2021), and since then, I've been on a constant
