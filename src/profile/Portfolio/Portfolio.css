@@ -19,7 +19,7 @@
     top:30px;
     left:40px;
     transition: transform 2s ;
-    transform-style: preserve-3d;;
+    transform-style: preserve-3d;
 }
 .project.flipped{
     transform: rotateY(180deg) ;

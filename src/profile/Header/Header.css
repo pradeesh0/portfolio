@@ -44,8 +44,8 @@ header.sticky{
     align-items: center;
     padding:0 9%;
     background: url('../../../public/prof.jpg') no-repeat;
-    background-position: center ;
-    background-size: contain;      
+    background-position: 60% 50% ;
+    background-size: 1300px;      
 }
 .home-content{
     margin-top: 10rem;
