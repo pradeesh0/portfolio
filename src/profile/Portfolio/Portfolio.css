@@ -6,6 +6,11 @@
     width: 100%;
     text-align: center;
 }
+#projects h5{
+    font-size: 2rem;
+    color: wheat;
+    text-align: center;
+}
 .portfolio{
     display: grid;
     grid-template-columns: 1fr;

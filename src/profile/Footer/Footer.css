@@ -3,9 +3,8 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
-    padding:2rem 9%;
-    font-size:1.7rem;
+    padding:3rem 9%;
+    font-size:2rem;
     background: rgba(22, 22, 22, 0.877);
 }
 

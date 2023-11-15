@@ -71,7 +71,7 @@ const Header = () => {
       <h2> ✨ Dedicated web developer and coding enthusiast, constantly diving into the tech world's wonders. 👨‍💻</h2>
       </div> 
       <button className='resume'>
-      <a href="resume.pdf" download="resume.pdf">Download Resume  </a>
+      <a href="Pradeesh_resume.pdf" download="Pradeesh_resume.pdf">Download Resume  </a>
     </button>
     <div className='icon'>
       <a href="https://github.com/pradeesh0"><GitHubIcon/></a>

@@ -56,7 +56,7 @@ const Portfolio = () => {
   }]
   return (
     <section id="projects" className="section">
-      <h2 data-aos="zoom-in" data-aos-duration="1000">Projects</h2>
+      <h2 data-aos="zoom-in" data-aos-duration="1000">Projects</h2><h5>(click to view desc)</h5>
       <div className="portfolio">
         {projects.map((project, index) => (
           <div className={`project ${flippedStates[index] ? 'flipped' : ''}`} key={index}  onClick={() => handleCardFlip(index)}>
