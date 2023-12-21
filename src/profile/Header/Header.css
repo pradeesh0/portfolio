@@ -39,15 +39,15 @@ header.sticky{
 .name{
     color:gold ;
 }
+/*
 .home{
     display: flex;
     align-items: center;
     padding:0 9%;
-    background: url('../../../public/cover.jpeg ') no-repeat;
+    background: url('../../../public/prof.jpg ') no-repeat;
     background-position: 70% 60% ;
-    background-size: 1300px;      
-    
-}
+    background-size: 600px;      
+}*/
 .home-content{
     margin-top: 10rem;
     max-width: 80rem;
