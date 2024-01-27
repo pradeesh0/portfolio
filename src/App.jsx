@@ -6,6 +6,7 @@ import Portfolio from './profile/Portfolio/Portfolio';
 import Skills from './profile/Skills/Skills';
 import Contact from './profile/Contact/Contact';
 import Footer from './profile/Footer/Footer';
+import Mobilecontent from './profile/Mobliecontent/Mobilecontent';
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
@@ -18,6 +19,7 @@ useEffect(()=>{
 
   return (
     <div className='App'>
+    <Mobilecontent/>
     <Header/>
     <About/>
     <Skills/>
